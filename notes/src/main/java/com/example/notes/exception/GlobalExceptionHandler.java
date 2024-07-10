@@ -43,11 +43,5 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResponse);
     }
 
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<String> handleOtherExceptions(Exception e) {
-        logger.log(Level.SEVERE, "Error during login", e);
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body("Internal Server Error");
-    }
 
 }
