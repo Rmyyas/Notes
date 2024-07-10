@@ -19,7 +19,6 @@ public class GlobalExceptionHandler {
 
     /**
      * Handles NoSuchElementException and returns a 404 NOT FOUND response.
-     *
      * @param e the NoSuchElementException
      * @return a ResponseEntity with the error message
      */
