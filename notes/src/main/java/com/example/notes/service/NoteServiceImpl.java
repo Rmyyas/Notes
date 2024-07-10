@@ -66,7 +66,6 @@ public class NoteServiceImpl {
         noteDTO.setText(note.getText());
         noteDTO.setId(note.getId());
         noteDTO.setTime(note.getTimestamp());
-        logger.log(Level.FINE, "Converted Note to NoteDTO: {0}", noteDTO);
         return noteDTO;
     }
 
